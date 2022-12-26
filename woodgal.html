@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>WOODGEL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<style>
+        body    {background-color: #f1eeea;}
+        .a1     {font-size: 60px;
+                 font-weight: 400;
+                 float:left; 
+                 margin-left: -400px;
+                }  
+        .d1     {float: right;
+
+                }
+        .b1     {width: 180px;
+                 border-radius: 0%;
+                 float: right;
+                 color: darkgoldenrod;
+                 font-weight: 200;
+                } 
+        .l1     {font-size: 25px;
+                 color: brown;
+                 font-weight: 200;
+                }
+        .l2     {background-color:  burlywood;
+                 border-radius: 0%;
+                 padding: 20px;
+                 width: 270px;
+                 text-align: center;
+                 height: 140px;
+                }
+        .l3     {background-color:  burlywood;
+                 border-radius: 0%;
+                 padding: 20px;
+                 width: 270px;
+                 text-align: center;
+                 height: 250px;
+                }
+        .n1     {background-color: #f1eeea;}
+        .d2     {margin-top: 130px;}
+        .w1     {font-weight: 700;
+                 margin-top: 100px;
+                 margin-left: 50px;
+                }   
+        .w2     {margin-left: 50px;} 
+        .w3     {margin-left: -530px;} 
+        .w4     {margin-left: 50px;
+                 font-size: 25px;
+                 font-weight: 200;
+                }
+        .o1     {margin-top: -320px;
+                 margin-left: 470px;
+
+                }
+        .w5     {transform:rotate(90deg);
+                 transform-origin: top right;
+                 margin-top: 200px;
+                 position: absolute;
+                 margin-left: -80px;
+                }   
+        .d3     {margin-top: 180px;}
+        .w6     {margin-left: -190px;
+                 margin-top: 400px;
+                }
+        .w7     {font-weight: 600;}
+        .w8     {border: 1px solid black;
+                 height: 300px;
+                 width: 690px;
+                 margin-left: 700px;
+                 margin-top: -160px;
+                 background-color: #656b50;
+                 padding: 50px;
+                 color: whitesmoke;
+                 font-size: 19px;
+                 text-align: center;
+                }
+        .w9     {border: none;
+                 font-weight: 700!important;
+                 letter-spacing: 3px!important;
+                 color:  #b69b74;
+                 font-size: 20px;
+                }
+        .f1     {font-size: 100px;
+                 color: #b69b74;
+                }
+        .d4     {margin-top: 140px;}
+        .f3     {color:  #767676;
+                 font-family: 'Muli', sans-serif;
+                 font-size: 1.2rem;
+                }
+        .f2     {font-family: 'Reem Kufi', sans-serif;
+                 font-size: 2.4rem;
+                 font-weight: 700;
+                }
+        .f4     {font-weight: 700;
+                 margin-left: 50px;
+                }
+        .f5     {font-size: 25px;
+                 font-weight: 200;
+                 margin-left: 50px;
+                }
+        .f6     {margin-left: 50px;
+                 margin-top: 20px;
+                 width: 650px;
+                }
+        .d5     {margin-top: 170px;
+                 height: 800px;
+                 background-color: #EEE8DF;
+                }
+        .f7     {margin-left: 50px;}
+        .f8     {font-family: 'Reem Kufi', sans-serif;
+                 font-size: 2.4rem;
+                 font-weight: 700;
+                 margin-top: 20px;
+                }
+        .f9     {font-family: 'Muli', sans-serif;
+                 margin-top: 30px;
+                 font-style: normal;
+                 font-size: 18px;
+                 line-height: 1.6;
+                 box-sizing: border-box;
+                 color: #343434;
+                 font-weight: 200;
+                 text-align: left;
+                }
+        .f10    {border: none;
+                 background-color:#EEE8DF ;
+                 justify-content: space-between;
+                 display: flex;
+                 width: 100%;
+                 font-family: 'Muli', sans-serif;
+                 font-size: 1.6rem;
+                 padding:5px;
+                 margin-top: 8px;
+                 font-weight: 500;
+                 color: inherit;
+                }
+        .f11    {font-size: 40px;
+                 margin-top: -8px;
+                 color: #b69b74;
+                }
+        .q1     {color: #b69b74;
+                 font-family: 'Reem Kufi', sans-serif;
+                 font-size: 2.4rem;
+                 font-weight: 700;
+                 padding-bottom: 1rem!important;
+                }
+        .q2     {text-align: center;
+                 font-style: normal;
+                }
+        .c1     {text-align: center;
+                 background-color: transparent;
+                 margin-left: 70px;
+                 border: none;
+                 margin-top: 50px;
+                 width:400px;
+                 float: left;
+                }
+        .c2     {margin-top: 40px;
+                 color: #343434;
+                 line-height: 1;
+                 word-break: break-word;
+                 word-wrap: break-word;
+                 
+                 font-family: 'Reem Kufi', sans-serif;
+                 font-size: 2.4rem;
+                 font-weight: 700;
+                }
+        .c3     {color: #b69b74;
+                 font-family: 'Muli', sans-serif;
+                 font-size: 1.2rem;
+                 font-weight: 700;
+                 
+                }
+        .c4     {font-family: 'Muli', sans-serif;
+                 font-size: 1.2rem;
+                 color: #343434;
+                 line-height: 1;
+                 word-break: break-word;
+                 word-wrap: break-word;
+                 display: block;
+                 margin-block-start: 1.33em;
+                 margin-block-end: 1.33em;
+                 margin-inline-start: 0px;
+                 margin-inline-end: 0px;
+                }
+        .k1     {content: '';
+                 position:relative;
+                 background: #b69b74;
+                 bottom: -1rem;
+                 left: 50%;
+                 width: 2px;
+                 height: 3rem;
+                 margin-top: -30px;
+                 margin-bottom: 30px;
+                }
+        .c5     {font-family: 'Muli', sans-serif;
+                 font-weight: 400;
+                 font-size: 1rem;
+                 font-style: normal;
+                 line-height: 1.6;
+                }
+        .d7     {margin-top: 1000px;
+                 background-color: #EEE8DF;
+                 margin-left: -20px;
+                 width: 102%;
+                 height: 800px;
+                 padding-top: 45px;
+                 padding-bottom: 45px;
+                }
+        .c6     {color: #343434;
+                 text-align: center;
+                 font-family: 'Reem Kufi', sans-serif;
+                 font-size: 2.4rem;
+                 font-weight: 300;
+                 padding-bottom: 1rem!important;
+                 word-break: break-word;
+                 word-wrap: break-word;
+                 box-sizing: border-box;
+                }
+        .k2     {content: '';
+                 position: absolute;
+                 top: 0;
+                 left: 0;
+                 background: #cebfaf;
+                 opacity: 0.5;
+                 width: 40%;
+                 height: 100%;
+                 float: left;
+                 z-index: 1;
+                 box-sizing: border-box;
+                 background-image: url('https://mobirise.com/extensions/woodm4/assets/images/background211.jpg');
+                 background-size: cover;
+                 background-position: center;
+                 height: 500px;
+                 margin: auto;
+                 display: flex;
+                 align-items: center;
+                 justify-content: center;
+                 position: relative;
+                 margin-left: 100px;
+                 padding-top: 60px;
+                }
+        .k3     {
+                 position: absolute;
+                 top: 0;
+                 left: 0;
+                 background: #cebfaf;
+                 opacity: 0.5;
+                 width: 40%;
+                 height: 100%;
+                 float: left;
+                 z-index: 1;
+                 box-sizing: border-box;
+                 background-image: url('https://mobirise.com/extensions/woodm4/assets/images/background211.jpg');
+                 background-size: cover;
+                 background-position: center;
+                 height: 500px;
+                 margin: auto;
+                 display: flex;
+                 align-items: center;
+                 justify-content: center;
+                 position: relative;
+                 margin-left: 100px;
+                 padding-top: 60px;
+                 
+                }
+        .k4     {
+                 margin-top:-50px;
+                }
+        .k6     {
+                 margin-top:-50px;
+                }
+        .k6     {float: left;
+                 margin-left: 300px;
+                 padding-top: 40px;
+                }
+        .k7     {font-family: 'Reem Kufi', sans-serif;
+                 font-size: 2.4rem;
+                 font-style: normal;
+                 line-height: 1.2;
+                 font-weight: 700;
+                 text-align: center;
+                 margin-left: -20px;
+                 margin-top: 30px;
+                }
+
+
+        .w10    {border: none;
+                 font-weight: 700!important;
+                 letter-spacing: 2px!important;
+                 color:  #b69b74;
+                 font-size: 20px;
+                 margin-left: 30px;
+                }
+        .i1     {background-position: 50% 50%;
+                 background-repeat: no-repeat;
+                 background-size: cover;
+                 position: relative;
+                 width: 100.7%;
+                 word-wrap: break-word;
+                 background-color: #eeeeee;
+                }
+        .x1     {text-align: center;
+                 font-family: 'Reem Kufi', sans-serif;
+                 font-size: 2.4rem;
+                 font-weight: 300;
+                 color: #343434;
+                 padding-bottom: 0.5rem!important;
+                 padding-top: 70px;
+                }
+        .x2     {font-family: 'Muli', sans-serif;
+                 font-size: 1.4rem;
+                 text-align: center;
+                 padding-bottom: 3rem!important;
+                 margin-top: 0;
+                 margin-bottom: 1rem;
+                 color: #343434;
+                 font-weight: 400;
+                }
+        .x3     {color: #9c9485;
+                 max-width: 600px;
+                 margin: auto;
+                 line-height: 1.4;
+                 text-align: center;
+                }
+        .k5     {content: '';
+                 position: relative;
+                 background: #b69b74;
+                 bottom: -1rem;
+                 width: 2px;
+                 height: 10rem;
+                 margin-left: 23px;
+                 margin-top: -30px;
+                 margin-bottom: 30px;
+                }
+        .form-control   {background-color:whitesmoke;
+                         border: none;
+                         border-bottom:3px solid #343434;
+                         font-family: 'Muli', sans-serif;
+                         font-size: 1.2rem;
+                         line-height: 1.43;
+                         min-height: 3.5em;
+                        }
+        .x4             {font-family: 'Muli', sans-serif;
+                         font-size: 1.2rem;
+                         line-height: 1.43;
+                         min-height: 3.5em;
+                         margin-left: 35px;
+                        }
+        .x6             {color: #b69b74;
+                         text-align: center;
+                         font-family: 'Muli', sans-serif;
+                         font-size: 1.6rem;
+                         font-weight: 700;
+                         margin-bottom: 0.75rem;
+                        }
+        .x7             {color: #ffffff;
+                         text-align: center;
+                         font-family: 'Muli', sans-serif;
+                         font-size: 1.2rem;
+                         font-style: normal;
+                         line-height: 1.6;
+                        }
+        .x8             {height: 100px;
+                         margin-top: 10px;
+                         background-color: #211c1c;
+                        }
+        .x9             {color: #767676;
+                         font-family: 'Muli', sans-serif;
+                         font-size: 1.2rem;
+                         font-style: normal;
+                         line-height: 1.6;
+                         padding-top: 36px;
+                         text-align: center;
+                        }
+        .d9     {background-color:whitesmoke;
+                 width: 100.7%;
+                 height: 880px;
+                 padding: 60px;
+                }
+        .d10    {border: 1px solid navy;
+                 height: 800px;
+                 background-color: #2a2525;
+                 position: relative;
+                 word-wrap: break-word;
+                }
+                
+        .w10:hover  {background-color: #EEE8DF;letter-spacing: 4px!important;font-weight: 600!important;color:  #b69b74;}
+        
+        .btn2   {border: none;}
+        .w9:hover   {background-color: #656b50;letter-spacing: 5px!important;font-weight: 800!important;color:  #b69b74;}
+        .f10:hover  {cursor: pointer}        
+        .btn1:not(:disabled):not(.disabled)  {cursor: pointer;}   
+        .btn                    {font-weight: 700!important;
+                                 letter-spacing: 3px!important;
+                                 border: 2px solid darkgoldenrod;
+                                 border-radius: 0%;
+                                }
+        .display-4              {font-family: 'Muli', sans-serif;
+                                 font-weight: 400;
+                                 font-size: 1rem;
+                                }
+        .btn1:hover             {background-color: burlywood;letter-spacing: 5px!important;font-weight: 800!important;cursor: pointer;}
+        .btn3:hover             {background-color: burlywood;letter-spacing: 5px!important;font-weight: 800!important;cursor: pointer;}
+        .l2 a:hover     {border-bottom: 1px solid brown;
+                         background-color: burlywood;letter-spacing: 1px!important;font-weight: 400!important;
+                        }
+        .l3 a:hover     {border-bottom: 1px solid brown;
+                         background-color: burlywood;letter-spacing: 1px!important;font-weight: 400!important;
+                        }
+        li a:hover      {border-bottom: 1px solid brown;letter-spacing: 1px!important;font-weight: 400!important;}
+        
+        
+
+
+    
+</style>
+<body>
+<div class="container-fluid w-100">
+    <!--HEADER-->
+    <nav class="navbar navbar-expand-sm navbar-dark w-100 fixed-top n1">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="https://mobirise.com/extensions/woodm4/assets/images/logo2.png" style="height:100px;"></a>
+          <a class="display-2 navbar-brand a1 text-dark" href="#">WoodM4</a>
+            <div class="d1">
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link l1 text-dark" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle l1 ms-4 text-dark" href="#" role="button" data-bs-toggle="dropdown">Live Demo</a>
+                                <ul class="dropdown-menu l2">
+                                    <li><a class="dropdown-item" href="#">Wooden Workshop</a></li>
+                                    <li><a class="dropdown-item mt-4" href="#">Wooden Furniture Store</a></li>
+                                </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle l1 ms-4 text-dark" href="#" role="button" type="button" data-bs-toggle="dropdown">Live Demo Blocks</a>
+                                <ul class="dropdown-menu l3">
+                                    <li><a class="dropdown-item" href="#"> Headers / Features / Content</a></li>
+                                    <li><a class="dropdown-item mt-4" href="#">Slider / Shop / Team</a></li>
+                                    <li><a class="dropdown-item mt-4" href="#">Accordions / Video / Image</a></li>
+                                    <li><a class="dropdown-item mt-4" href="#">Forms / Map / Footers</a></li>
+                                </ul>
+                        </li>
+                        <li class="nav-item l1">
+                            <a class="nav-link btn btn-primary-dark b1 ms-4 text-dark btn1" type="button" href="#" style="color:darkgoldenrod">BUY NOW</a>
+                        </li>    
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--HEADER-->
+    <div class="d2 row">
+        <div class="col">
+            <h1 class="w1 display-1">Wooden<br>Workshop</h1><br><br>
+            <p class="w2">Wood Workshop Theme</p><br>
+            <h3 class="w4 display-6">The customer is very important,the<br> customer will be followed by the<br> customerSomemembers of Dellentesque<br> felis, in dignissimdiam eleifend et.</h3>
+            <a class="btn btn-lg btn-primary-outline display-4 mt-5 ms-5 w-25 p-3 btn1" href="#" type="button">READ MORE</a>
+        </div>
+        <div class="col w3">
+            <div class="row">
+                <div class="col">
+                    <img src="https://mobirise.com/extensions/woodm4/assets/images/background2.jpg" style="height:800px;width:800px;" class="shadow p-0 mb-0">
+                    <img src="https://mobirise.com/extensions/woodm4/assets/images/01.jpg" class="o1 shadow p-0 mb-0" style="height:400px;width: 400px;">
+                </div>
+                <div class="col">
+                    <i class="fa fa-facebook mt-5 ms-4" style="font-size:40px;"></i><br><i class="fa fa-instagram mb-5 ms-4 mt-3" style="font-size:40px;"></i>
+                    <div class="k5" style="margin-left:36px"></div>
+                    <h3 class="w5" style="margin-top:140px;">ABOUT US</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d3 row">
+        <div class="col shadow p-0 mb-0">
+            <img src="https://mobirise.com/extensions/woodm4/assets/images/background3.jpg" style="width: 1080px;">
+        </div>
+        <div class="col w6 mt-5">
+            <h1 class="display-1 w7">Handmade<br> Wood Products</h1>
+        </div>
+        <div class="w8 ">
+            <p>The customer is very important, the customer will be followed by the customer.
+                I hate the fear of pregnancy, always in my need, time pregnant Live in the
+                course of the bed. He was not an ugly person, nor a soft pure employee.
+                The children, but the little element, the sorrows as well, the free feugiat.
+            </p>
+            <button class="btn border border-0 mt-4 w9">View more<i class="fa fa-long-arrow-right"></i></button>
+        </div>
+    </div>
+    <center>
+    <div class="d4 row">
+        <div class="col">
+            <i class="fa fa-cog f1"></i>
+            <h1 class="f2 mt-4">Eco Production</h1>
+            <p class="f3 mt-4">The customer is very important, the customer will be followed by the customer. Don't forget to smile or smile from time to time. I'm going to put it on a tablet, except for some result. There is no chocolate.</p>
+        </div>
+        <div class="col">
+            <i class="fa fa-american-sign-language-interpreting f1"></i>
+            <h1 class="f2 mt-4">Unique Design</h1>
+            <p class="f3 mt-4">The customer is very important, the customer will be followed by the customer. Don't forget to smile or smile from time to time. I'm going to put it on a tablet, except for some result. There is no chocolate.</p>
+        </div>
+        <div class="col">
+            <i class="fa fa-dribbble f1"></i>
+            <h1 class="f2 mt-4">Natural Materials</h1>
+            <p class="f3 mt-4">The customer is very important, the customer will be followed by the customer. Don't forget to smile or smile from time to time. I'm going to put it on a tablet, except for some result. There is no chocolate.</p>
+        </div>
+    </div></center>
+    <div class="d5 row">
+        <div class="col">
+            <h1 class="f4 display-1">Unique Work<br> Experience</h1><br><br>
+            <p class="f5">The customer is very important, the customer will be followed by the customer. I hate the fear of stress, I always need it.</p>
+            <img src="https://mobirise.com/extensions/woodm4/assets/images/04.jpg" class="f6 shadow p-0 mb-0">
+        </div>
+        <div class="col f7">
+            <h3 class="display-6 f8">Only Natural Materials</h3>
+            <p class="f9 display-6">The customer is very important, the customer will be followed by the customer. I hate the fear of pregnancy, always in my need, time pregnant Live in the course of the bed. He was not an ugly person, nor a soft pure employee. The children, but the little element, the sorrows as well, the free feugiat.</p>
+            <h3 class="display-6 f8">Eco Production</h3>
+            <p class="f9 display-6">The customer is very important, the customer will be followed by the customer. I hate the fear of pregnancy, always in my need, time pregnant Live in the course of the bed. He was not an ugly person, nor a soft pure employee. The children, but the little element, the sorrows as well, the free feugiat.</p><br><br>
+            <h4 class="f10"  data-bs-toggle="collapse" data-bs-target="#demo">Unique Design <span class="f11" >+</span></h4>
+            <div id="demo" class="collapse">
+                The customer is very important, the customer will be followed by the customer. I hate the fear of pregnancy, always in my need, time pregnant Live in the course of the bed. He was not an ugly person, nor a soft pure employee. The children, but the little element, the sorrows as well, the free feugiat.
+            </div><br>
+            <h4 class="f10" data-bs-toggle="collapse" data-bs-target="#demo1">Natural Materials <span  class="f11">+</span></h4>
+            <div id="demo1" class="collapse">
+                The customer is very important, the customer will be followed by the customer. I hate the fear of pregnancy, always in my need, time pregnant Live in the course of the bed. He was not an ugly person, nor a soft pure employee. The children, but the little element, the sorrows as well, the free feugiat.
+            </div><br>
+            <h4 class="f10" data-bs-toggle="collapse" data-bs-target="#demo2">Eco Production<span  class="f11" >+</span> </h4>
+            <div id="demo2" class="collapse">
+                The customer is very important, the customer will be followed by the customer. I hate the fear of pregnancy, always in my need, time pregnant Live in the course of the bed. He was not an ugly person, nor a soft pure employee. The children, but the little element, the sorrows as well, the free feugiat.
+            </div>
+        </div>
+    </div>
+    <div class="d6">
+        <center><h1 class="display-3 q1 mt-3">Our Team</h1>
+                <p class="display-4 q2">The customer is very important, the customer will be followed by the customer.<br> Don't forget to smile or smile from time to time. I'm going to put it on a tablet, except for some result.</p>
+       
+        <div class="card c1">
+            <img class="card-img-top" src="https://mobirise.com/extensions/woodm4/assets/images/face2.jpg" alt="Card image" style="width:100%">
+                <div class="card-block">
+                  <h4 class="card-title c2">Jane Brown</h4>
+                  <h3 class="display-4 c3">Manager</h3>
+                  <h3 class="display-3 c4">0704 - 94 25 49 </h3>
+                  <h3 class="display-3 c4" style="font-size:500">sara@bosumhus.se</h3>
+                  <div class="k1"></div>
+                  <p class="card-text c5 display-4">The customer is very important, the customer will be followed by the customer. Don't forget to smile or smile from time to time. I'm going to put it on a tablet, except for some result. There is no chocolate. But Maecenas is a great actor.</p>
+                </div>
+        </div>
+        <div class="card c1">
+            <img class="card-img-top" src="https://mobirise.com/extensions/woodm4/assets/images/face3.jpg" alt="Card image" style="width:100%">
+                <div class="card-block">
+                  <h4 class="card-title c2">John Smith</h4>
+                  <h3 class="display-4 c3">Worker</h3>
+                  <h3 class="display-3 c4">0704 - 94 25 49 </h3>
+                  <h3 class="display-3 c4" style="font-size:500">sara@bosumhus.se</h3>
+                  <div class="k1"></div>
+                  <p class="card-text c5 display-4">The customer is very important, the customer will be followed by the customer. Don't forget to smile or smile from time to time. I'm going to put it on a tablet, except for some result. There is no chocolate. But Maecenas is a great actor.</p>
+                </div>
+        </div>
+        <div class="card c1">
+            <img class="card-img-top" src="https://mobirise.com/extensions/woodm4/assets/images/face4.jpg" alt="Card image" style="width:100%">
+                <div class="card-block">
+                  <h4 class="card-title c2">Ann Jason</h4>
+                  <h3 class="display-4 c3">Designer</h3>
+                  <h3 class="display-3 c4">0704 - 94 25 49 </h3>
+                  <h3 class="display-3 c4" style="font-size:500">sara@bosumhus.se</h3>
+                  <div class="k1"></div>
+                  <p class="card-text c5 display-4">The customer is very important, the customer will be followed by the customer. Don't forget to smile or smile from time to time. I'm going to put it on a tablet, except for some result. There is no chocolate. But Maecenas is a great actor.</p>
+                </div>
+        </div>
+        </center>
+    </div>
+    <div class="d7">
+        <center>
+        <h1 class="display-3 c6">Watch our Videos</h1>  
+        <div class="k2">
+            <div class="k4">
+                <i class="fa fa-play-circle" style="font-size:100px;margin-top: 16px;margin-left: 7px;color:#EEE8DF;"></i>
+            </div>
+        </div>
+        
+        <div class="k3">
+            <div class="k6">
+                <i class="fa fa-play-circle" style="font-size:100px;margin-top: 16px;margin-left: 7px;color:#EEE8DF;"></i>
+            </div>
+        </div>
+    </center> 
+        <div class="k6">
+            <h2 class="display-5 k7">Natural Materials</h2>
+            <button class="btn border border-0 w10" >View more<i class="fa fa-long-arrow-right"></i></button>
+        </div>
+        <div class="k6" style="margin-left: 450px;">
+            <h2 class="display-5 k7">Eco Production</h2>
+            <button class="btn border border-0 w10">View more<i class="fa fa-long-arrow-right"></i></button>
+        </div>
+    </div>
+    <div class="d8">
+        <img src="https://cdn.shopify.com/s/files/1/0262/1983/9576/files/GB-sustain-fundamentals-3_1400x.png?v=1614390872" class="i1">
+    </div>
+    <div class="d9">
+        <form>
+            <h1 class="x1 display-2">Contact Us</h1>
+            <p class="x2 display-5">The customer is very important, the customer will be followed by the customer. Some members of Dellentesque felis, in dignissim diam eleifend et. Aenean arrows of the lake ague convallis.</p>
+            <center><div class="row w-75">
+                <div class="col">
+                    <input type="text" id="name" placeholder="Enter your name" class="form-control mt-3  p-3" required>
+                </div>
+                <div class="col">
+                    <input type="text" id="name" placeholder="Last name" class="form-control mt-3 p-3" required>
+                </div>
+            </div>
+            <div class="row w-75 mt-3">
+                <div class="col">
+                    <input type="text" id="name" placeholder="Phone" class="form-control mt-3  p-3" required>
+                </div>
+                <div class="col">
+                    <input type="text" id="name" placeholder="Email" class="form-control mt-3  p-3" required>
+                </div>
+            </div>
+            <div class="row w-75 mt-4 x4">
+                <div class="col mt-3">
+                    <label for="form-control opacity-75 p-3" style="margin-left:-60px;color:#767676;">Theme</label>
+                    <input type="checkbox" class="form-check-input ms-5" id="check1" name="option1" value="something" class="form-control mt-3  p-3" required>
+                    <label class="form-check-label opacity-75" for="check2">Service</label>
+                    <input type="checkbox" class="form-check-input ms-5" id="check2" name="option2" value="something" class="form-control mt-3 border border-top-0 border border-start-0 border border-end-0 border border border-3 p-3" required>
+                    <label class="form-check-label opacity-75" for="check2">Info</label>
+                    <input type="checkbox" class="form-check-input ms-5" id="check3" name="option3" value="something" class="form-control mt-3 border border-top-0 border border-start-0 border border-end-0 border border border-3 p-3" required>
+                    <label class="form-check-label opacity-75" for="check2">Support</label>
+                    
+                </div>
+                <div class="col">
+                    <textarea type="text" id="name" placeholder="Message" class="form-control mt-3  p-3" style="margin-left:-49px" required></textarea>
+                </div>
+            </div>
+            <a class="btn btn-lg btn-primary-outline display-4 mt-5 ms-5 p-3 btn3" style="width:15%;" href="#" type="button">SUBMIT</a>
+            <p class="mt-4 display-4 x3">The customer is very important, the customer will be followed by the customer.<br> Some members of Dellentesque felis, in dignissim diam eleifend et.<br> But prophesy with the arrows of Aenean.</p>
+        </center>
+        </form>
+    </div>
+    <!--FOOTER-->
+    <div class="d10">
+        <div class="x5 text-center p-5 mt-5">
+            <img src="https://mobirise.com/extensions/woodm4/assets/images/logo2.png" style="height:150px;">
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2 class="x6 display-5">Address</h2>
+                <p class="x7 display-4">New York<br>8345 State</p>
+            </div>
+            <div class="col">
+                <h2 class="x6 display-5">Contacts</h2>
+                <p class="x7 display-4">00-12-34-56-78<br>support@mobirise.com</p>
+            </div>
+            <div class="col">
+                <h2 class="x6 display-5">Office</h2>
+                <p class="x7 display-4">7345 Street<br>Staten Island</p>
+            </div>
+        </div>
+        <center><div class="col">
+            <i class="fa fa-facebook mt-5 ms-4" style="font-size:40px;color: #b69b74;"></i><br><i class="fa fa-instagram mb-5 ms-4 mt-5" style="font-size:40px;color: #b69b74;"></i>
+        </div>
+        <div class="k5"></div>
+        <div class="x8">
+            <p class="display-6 x9">© Copyright 2019 Mobirise - Wood Workshop Theme - All Rights Reserved</p>
+        </div>
+    </center>
+    </div>
+    <!--FOOTER-->
+</div>
+
+</body>
+</html>
